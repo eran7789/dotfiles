@@ -56,18 +56,20 @@ brew tap caskroom/cask
 
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install webstorm
 brew cask install the-unarchiver
 brew cask install spectacle
 brew cask install alfred
 brew cask install teamviewer
 brew cask install firefox
 brew cask install 1password
-brew cask install visual-studio-code
-brew cask install filezilla
 brew cask install jetbrains-toolbox
 brew cask install adobe-creative-cloud
 brew cask install docker
 brew cask install slack
+brew cask install zeplin
+brew cask install spotify
+brew cask install whatsapp
 
 brew cleanup
 brew cask cleanup
