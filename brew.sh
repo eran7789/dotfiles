@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
-
-# Make sure we’re using the latest Homebrew.
 brew update
-
-# Upgrade any already-installed formulae.
 brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
@@ -40,58 +35,39 @@ brew install gnupg
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
-brew install screen
-brew install homebrew/php/php56 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 brew install git
-brew install git-lfs
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
 brew install p7zip
 brew install pigz
-brew install pv
-brew install rename
-brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install autojump
+brew install thefuck
+brew install node
+brew install watchman
+brew install z
 
-# Remove outdated versions from the cellar.
+# Install Cask
+brew tap caskroom/cask
+
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install the-unarchiver
+brew cask install spectacle
+brew cask install alfred
+brew cask install teamviewer
+brew cask install firefox
+brew cask install 1password
+brew cask install visual-studio-code
+brew cask install filezilla
+brew cask install jetbrains-toolbox
+brew cask install adobe-creative-cloud
+brew cask install docker
+brew cask install slack
+
 brew cleanup
+brew cask cleanup
