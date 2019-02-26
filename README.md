@@ -9,7 +9,7 @@
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/ronlanger/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/eran7789/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -29,14 +29,14 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/ronlanger/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
+cd; curl -#L https://github.com/eran7789/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
 ```
 
 To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/ronlanger/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/eran7789/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
 
 Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 
@@ -61,7 +61,7 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/ronlanger/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/eran7789/dotfiles/fork) instead, though.
 
 ### Sensible macOS defaults
 
