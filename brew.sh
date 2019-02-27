@@ -66,6 +66,7 @@ brew cask install docker
 brew cask install zoomus
 brew cask install sequel-pro
 brew cask install postman
+brew cask install postico
 
 brew cleanup
 brew cask cleanup
