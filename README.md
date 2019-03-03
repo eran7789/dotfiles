@@ -1,4 +1,4 @@
-# Ron’s dotfiles
+# Eran’s dotfiles
 
 ## Installation
 
