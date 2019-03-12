@@ -48,6 +48,8 @@ brew install yarn
 brew install watchman
 brew install z
 brew install heroku/brew/heroku
+brew install zsh
+brew install antigen
 
 # Install Cask
 brew tap caskroom/cask
