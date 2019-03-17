@@ -13,5 +13,5 @@ nvm install --lts node
 
 # npm globals
 npm install -g nodemon
-npm install -g sequelize-cli
 npm install -g react-native-cli
+npm install -g eslint
