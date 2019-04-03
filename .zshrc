@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -s "/Users/erankeren/.scm_breeze/scm_breeze.sh" ] && source "/Users/erankeren/.scm_breeze/scm_breeze.sh"
-export PATH=$PATH:/usr/local/opt/tomcat@7/bin:/usr/local/opt/tomcat@7/bin:/Users/eran/.nvm/versions/node/v8.11.2/bin:/Users/eran/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin/:~/Library/Android/platform-tools:/usr/local/share/dotnet:~/.dotnet/tools:/Users/eran/Library/Android/sdk/tools:/Users/eran/Library/Android/sdk/platform-tools:/Users/eran/Library/Android/sdk/tools:/usr/local/mysql/bin/
+export PATH=$PATH:/Users/eran/.nvm/versions/node/v8.11.2/bin:/Users/eran/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin/:~/Library/Android/platform-tools:/usr/local/share/dotnet:~/.dotnet/tools:/Users/eran/Library/Android/sdk/tools:/Users/eran/Library/Android/sdk/platform-tools:/Users/eran/Library/Android/sdk/tools:/usr/local/mysql/bin/
 
 # add antigen
 source /usr/local/share/antigen/antigen.zsh
@@ -107,3 +107,5 @@ export NVM_AUTO_USE=true
 antigen bundle lukechilds/zsh-nvm
 
 antigen apply
+
+alias kill-port='function _killPort() { port=$1; pid=$(lsof -i:$port -t); kill -TERM $pid || kill -KILL $pid };_killPort'
