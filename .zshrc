@@ -108,4 +108,4 @@ antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 
-alias kill-port='function _killPort() { port=$1; pid=$(lsof -i:$port -t); kill -TERM $pid || kill -KILL $pid };_killPort'
+alias kill-port='function _killPort() { port=$1; pid=$(lsof -i:$port -t); kill -TERM $pid || kill -KILL $pid; };_killPort'
